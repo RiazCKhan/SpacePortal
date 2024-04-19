@@ -1,0 +1,9 @@
+.landing {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  position: relative;
+  background-image: url(../public/loginOne.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
