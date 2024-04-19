@@ -1,9 +1,9 @@
-function App() {
+import Homepage from './pages/landing/Homepage'
+
+export default function App() {
   return (
     <div className="app">
-      Pending...
+      <Homepage />
     </div>
   );
 }
-
-export default App;
