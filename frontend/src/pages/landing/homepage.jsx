@@ -34,9 +34,11 @@ export default function Homepage() {
             <h1 style={{ flexGrow: "1" }}>
               JustFor<span style={{ color: "#256D1B" }}>Today.</span>
             </h1>
-            <IconButton>
-              <SortIcon style={{ color: "#fff", fontSize: "2rem" }} />
-            </IconButton>
+            <div>
+              <IconButton>
+                <SortIcon style={{ color: "#fff", fontSize: "2rem" }} />
+              </IconButton>
+            </div>
           </Toolbar>
         </AppBar>
         <Collapse
