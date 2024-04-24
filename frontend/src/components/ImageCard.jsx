@@ -1,17 +1,15 @@
 import * as React from "react";
 import Card from "@mui/material/Card";
-import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
-import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 
-export default function ImageCard() {
+export default function ImageCard({ space }) {
   return (
     <Card sx={{ background: "rgba(0, 0, 0, 0.5)", maxWidth: 545 }}>
       <CardMedia
         sx={{ height: 340 }}
-        image="/static/images/cards/contemplative-reptile.jpg"
+        image={space.image}
         title="green iguana"
       />
       <CardContent>
@@ -26,15 +24,19 @@ export default function ImageCard() {
             fontSize: "2rem",
           }}
         >
-          Lizard
+          {space.title}
         </Typography>
         <Typography
-          sx={{ color: "#fff" }}
+          sx={{
+            color: "#ddd",
+            fontFamily: "Nunito",
+            fontWeight: "bold",
+            fontSize: "1.1rem",
+          }}
           variant="body2"
           color="text.secondary"
         >
-          Lizards are a widespread group of squamate reptiles, with over 6,000
-          species, ranging across all continents except Antarctica
+          {space.desc}
         </Typography>
       </CardContent>
       {/* <CardActions>
