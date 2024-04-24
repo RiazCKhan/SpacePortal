@@ -36,7 +36,7 @@ export default function Header() {
       <Collapse
         in={logoAnimation}
         {...(logoAnimation ? { timeout: 1000 } : {})}
-        collapseHeight={50}
+        collapseheight={50}
       >
         <div>
           <h1 style={{ fontSize: "3rem", textAlign: "center", color: "#fff" }}>
