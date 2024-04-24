@@ -15,6 +15,7 @@ export default function Header() {
     <div
       style={{
         display: "flex",
+        minHeight: "100vh",
         width: "100%",
         justifyContent: "center",
         alignItems: "center",
