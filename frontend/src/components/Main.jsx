@@ -1,3 +1,9 @@
+import ImageCard from "./ImageCard";
+
 export default function Main() {
-  return <div></div>;
+  return (
+    <div style={{ minHeight: "90vh" }}>
+      <ImageCard />
+    </div>
+  );
 }
