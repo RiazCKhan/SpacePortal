@@ -1,9 +1,8 @@
 .landing {
   min-height: 100vh;
   width: 100%;
-  display: flex;
   position: relative;
-  background-image: url(../../public/loginThree.jpeg);
+  background-image: url(../../public/galaxyHome.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
 }
