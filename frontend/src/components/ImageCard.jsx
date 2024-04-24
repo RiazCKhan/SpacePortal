@@ -9,7 +9,7 @@ export default function ImageCard(spaceProps) {
   const { title, description, imageUrl, time } = spaceProps;
 
   return (
-    <div style={{ margin: "5rem" }}>
+    <div style={{ margin: "2rem" }}>
       <Card sx={{ background: "rgba(0, 0, 0, 0.5)", maxWidth: 545 }}>
         <CardMedia sx={{ height: 340 }} image={imageUrl} title={title} />
         <CardContent>
