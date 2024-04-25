@@ -6,7 +6,7 @@ export default function useWindowPosition(id) {
 
   useLayoutEffect(() => {
     const updateposition = () => {
-      const offSet = window.document.getElementById().offsetHeight
+      const offSet = window.document.getElementById(id).offsetHeight
       if (window.scrollY > offSet * 0.7) {
         setWindowAnimation(true);
       }
