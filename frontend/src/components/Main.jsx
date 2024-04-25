@@ -1,7 +1,10 @@
 import ImageCard from "./ImageCard";
 import spacePlaces from "../static/spacePlaces";
+import useWindowPosition from "../hooks/useWindowPosition";
 
 export default function Main() {
+  const checkScrollVal = useWindowPosition("header");
+
   const spaceProps = spacePlaces.map((item) => {
     return (
       <ImageCard
@@ -11,6 +14,7 @@ export default function Main() {
         description={item.description}
         imageUrl={item.imageUrl}
         time={item.time}
+        checkScrollVal={checkScrollVal}
       />
     );
   });
