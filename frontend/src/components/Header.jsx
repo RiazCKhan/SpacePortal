@@ -4,6 +4,7 @@ import "../styles/homepageStyles.css";
 import { AppBar, IconButton, Toolbar, Collapse } from "@mui/material";
 import SortIcon from "@mui/icons-material/Sort";
 import KeyboardDoubleArrowDownIcon from "@mui/icons-material/KeyboardDoubleArrowDown";
+import { Link as Scroll } from "react-scroll";
 
 export default function Header() {
   const [logoAnimation, setLogoAnimation] = useState(false);
@@ -41,13 +42,15 @@ export default function Header() {
       >
         <div>
           <h1 style={{ fontSize: "4rem", textAlign: "center", color: "#fff" }}>
-            Welcome to <span style={{ color: "#da98f8" }}>Space</span>.
+            Welcome to Space <span style={{ color: "#da98f8" }}>Station</span>.
             <br />
-            <IconButton>
-              <KeyboardDoubleArrowDownIcon
-                style={{ color: "#fff", fontSize: "2rem" }}
-              />
-            </IconButton>
+            <Scroll to="main" smooth={true}>
+              <IconButton>
+                <KeyboardDoubleArrowDownIcon
+                  style={{ color: "#fff", fontSize: "2rem" }}
+                />
+              </IconButton>
+            </Scroll>
           </h1>
         </div>
       </Collapse>
