@@ -40,8 +40,8 @@ export default function Header() {
         collapseheight={50}
       >
         <div>
-          <h1 style={{ fontSize: "3rem", textAlign: "center", color: "#fff" }}>
-            Space<span style={{ color: "#da98f8" }}>Station</span>.
+          <h1 style={{ fontSize: "4rem", textAlign: "center", color: "#fff" }}>
+            Welcome to <span style={{ color: "#da98f8" }}>Space</span>.
             <br />
             <IconButton>
               <KeyboardDoubleArrowDownIcon
