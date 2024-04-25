@@ -21,6 +21,7 @@ export default function Main() {
 
   return (
     <div
+      id="main"
       style={{
         minHeight: "100vh",
         display: "flex",
