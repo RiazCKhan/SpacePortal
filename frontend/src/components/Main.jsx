@@ -25,6 +25,7 @@ export default function Main() {
       style={{
         minHeight: "100vh",
         display: "flex",
+        flexWrap: "wrap",
         justifyContent: "center",
         alignItems: "center",
       }}
